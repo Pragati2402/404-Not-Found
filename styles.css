@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /* Default rem = 16 px , its 62.5% will be 10 px */
+    font-size: 62.5%;
+}
+header h1{
+    font-size: 2.4rem;
+    font-family:'Inconsolata', monospace ;
+    letter-spacing: -0.08em;
+    padding: 2rem 0 0 1rem;
+    color: #333333;
+    height: 15vh;
+    font-weight: bold;
+}
+section{
+    display: flex;
+    min-height: 80vh;
+    font-family: 'Space Mono', monospace;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    padding-left: 2rem;
+}
+.head{
+        font-size: 6rem;
+        font-weight: 700;
+        width: 85%;
+        letter-spacing: -0.035rem;
+        color: #333333;
+        padding: 0.5rem 0
+}
+section div img{
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 0.5rem 0 ;
+}
+.right{
+    flex: 1;
+    line-height: 6rem;
+}
+.left{
+    flex: 1;
+}
+p.text{
+    line-height: 3rem;
+    letter-spacing: -0.035em;
+    font-size: 2rem;
+    font-weight: normal;
+    padding:0.5rem 0;
+}
+.btn{
+    background: #333333;
+    color: #fff;
+    margin: 2rem;
+    margin-left: 0;
+    padding: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+footer{
+    
+    font-weight: 500;
+    font-family:'Montserrat', sans-serif; 
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* Responsiveness */
+@media screen and (max-width:550px) {
+    html{
+        font-size: 42%;
+       }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .right{
+       width: 100%;
+    }
+}
+@media screen and (min-width:550px) and (max-width:835px) {
+    html{
+        font-size: 50%;
+    }
+    section div img{
+        width:90%
+    }
+    
+}
